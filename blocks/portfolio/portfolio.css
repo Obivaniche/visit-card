@@ -1,0 +1,32 @@
+.portfolio {
+    max-width: 320px;
+    margin: auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+    background-color: #5C5C5C;
+}
+
+@media screen and (min-width: 768px) {
+
+    .portfolio {
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .portfolio {
+        max-width: 928px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .portfolio {
+        max-width: 1184px;
+    }
+
+}

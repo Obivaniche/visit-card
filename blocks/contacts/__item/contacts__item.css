@@ -1,0 +1,9 @@
+.contacts__item {
+    margin: 0 auto;
+    width: 46px;
+    transition: transform .4s;
+}
+
+.contacts__item:hover {
+    transform: scale(1.3);
+}

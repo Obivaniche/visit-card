@@ -1,0 +1,31 @@
+.skills {
+    max-width: 320px;
+    margin: 0 auto 80px auto;
+    display: block;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+    .skills {
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .skills {
+        max-width: 928px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .skills {
+        max-width: 1184px;
+    }
+
+}

@@ -1,0 +1,14 @@
+.menu__item {
+transition: transform .4s;
+}
+
+.menu__item:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu__item {
+    }
+
+}

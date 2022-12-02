@@ -1,0 +1,18 @@
+.contacts__subtitle {
+    width: 285px;
+    margin: 24px auto 0 auto;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contacts__subtitle:last-of-type {
+    margin: 6px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contacts__subtitle {
+        width: 480px;
+    }
+
+}

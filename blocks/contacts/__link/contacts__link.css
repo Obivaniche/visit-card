@@ -1,0 +1,9 @@
+.contacts__link {
+    width: 46px;
+    height: 46px;
+    transition: opacity .4s linear;
+}
+
+.contacts__link:hover {
+    opacity: .8;
+}

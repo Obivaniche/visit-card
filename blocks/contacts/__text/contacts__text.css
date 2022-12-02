@@ -1,0 +1,9 @@
+.contacts__text {
+    margin: 36px auto 0 auto;
+    font-size: 14px;
+    color: #000000;
+}
+
+.contacts__text:last-of-type {
+    margin: 8px auto 48px auto;
+}

@@ -1,0 +1,16 @@
+.about__titles {
+    padding: 90px 0 0 0;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about__titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 190px;
+    }
+
+}

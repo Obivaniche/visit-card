@@ -1,0 +1,12 @@
+.about__subtitle_black {
+    color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about__subtitle_black {
+        margin: auto;
+        width: 270px;
+    }
+
+}
