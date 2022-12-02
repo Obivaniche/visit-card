@@ -4,15 +4,15 @@
     transition: opacity .4s linear;
 }
 
-.menu__link:hover {
-    opacity: .8;
-}
-
 @media screen and (min-width: 768px) {
 
     .menu__link {
         font-size: 18px;
         font-weight: 600;
+    }
+
+    .menu__link:hover {
+        opacity: .8;
     }
 
 }

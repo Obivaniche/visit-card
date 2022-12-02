@@ -21,3 +21,12 @@ if (menuLinks.length > 0) {
         }
     }
 };
+
+const iconMenu = document.querySelector('.menu__icon');
+if(iconMenu) {
+    const menuContainer = document.querySelector('.menu__container');
+    iconMenu.addEventListener('click', function(e){
+        iconMenu.classList.toggle('.menu__icon_active');
+        menuContainerclassList.toggle('.menu__container_active');
+    });
+};
