@@ -17,11 +17,11 @@
                     </div>
                     <div class="menu__container">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">На главную</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Обо мне</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Мои навыки</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Портфолио</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".header" href="#">На главную</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".about__article" href="#">Обо мне</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".skills__title" href="#">Мои навыки</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".portfolio__title" href="#">Портфолио</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".contacts__title" href="#">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     <h2 class="about__subtitle about__subtitle_black">Junior Frontend Developer 31&nbsp;год,
                         Санкт-Петербург</h2>
                 </div>
-                <img class="about__image" src="<%=require('images/photo_1.jpg')%>" alt="Мое фото">
+                <img class="about__image" src="<%=require('./images/photo_1.jpg')%>" alt="Мое фото">
                 <article class="about__article">
                     <h2 class="about__title">Обо мне</h2>
                     <h3 class="about__subtitle">Мне нравится создавать цифровые продукты, которыми пользуются люди.</h3>
@@ -56,19 +56,19 @@
                 <h3 class="skills__subtitle">Главные инструменты</h3>
                 <div class="tools">
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('images/html.svg')%>" alt="HTML">
+                        <img class="tools__image" src="<%=require('./images/html.svg')%>" alt="HTML">
                         <figcaption class="tools__caption">HTML</figcaption>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('images/css.svg')%>" alt="CSS">
+                        <img class="tools__image" src="<%=require('./images/css.svg')%>" alt="CSS">
                         <figcaption class="tools__caption">CSS</figcaption>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('images/js.svg')%>" alt="JavaScript">
+                        <img class="tools__image" src="<%=require('./images/js.svg')%>" alt="JavaScript">
                         <figcaption class="tools__caption">JavaScript</figcaption>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image rotation" src="<%=require('images/react.svg')%>" alt="React">
+                        <img class="tools__image rotation" src="<%=require('./images/react.svg')%>" alt="React">
                         <figcaption class="tools__caption">React</figcaption>
                     </figure>
                 </div>
@@ -76,21 +76,21 @@
             <section class="portfolio">
                 <h2 class="portfolio__title">Портфолио</h2>
                 <figure class="portfolio__illustration">
-                    <img class="portfolio__image" src="<%=require('images/learning.png')%>" alt="CSS">
+                    <img class="portfolio__image" src="<%=require('./images/learning.png')%>" alt="CSS">
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
                             rel="noopener">Проект "Научиться учиться"</a>
                     </figcaption>
                 </figure>
                 <figure class="portfolio__illustration">
-                    <img class="portfolio__image" src="<%=require('images/travel.png')%>" alt="CSS">
+                    <img class="portfolio__image" src="<%=require('./images/travel.png')%>" alt="CSS">
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/russian-travel/" target="_blank"
                             rel="noopener">Проект "Путешествие по России"</a>
                     </figcaption>
                 </figure>
                 <figure class="portfolio__illustration">
-                    <img class="portfolio__image" src="<%=require('images/mesto.png')%>" alt="CSS">
+                    <img class="portfolio__image" src="<%=require('./images/mesto.png')%>" alt="CSS">
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/mesto/" target="_blank"
                             rel="noopener">Проект "Место"</a>
@@ -103,16 +103,16 @@
                 <h3 class="contacts__subtitle">Добро пожаловать в мои соцсети!</h3>
                 <ul class="contacts__links">
                     <li class="contacts__item"><a class="contacts__link" href="https://obivaniche.github.io/mesto/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('images/linkedin.svg')%>"
+                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/linkedin.svg')%>"
                                 alt="LinkedIn"></a></li>
                     <li class="contacts__item"><a class="contacts__link" href="https://obivaniche.github.io/mesto/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('images/twitter.svg')%>"
+                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/twitter.svg')%>"
                                 alt="Twitter"></a></li>
                     <li class="contacts__item"><a class="contacts__link" href="https://obivaniche.github.io/mesto/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('images/instagram.svg')%>"
+                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/instagram.svg')%>"
                                 alt="Instagram"></a></li>
                     <li class="contacts__item"><a class="contacts__link" href="https://obivaniche.github.io/mesto/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('images/vk.svg')%>"
+                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/vk.svg')%>"
                                 alt="VK"></a>
                     </li>
                 </ul>
