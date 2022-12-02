@@ -17,3 +17,12 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+
+    .about__image {
+        width: 940px;
+        height: 380px;
+    }
+
+}
