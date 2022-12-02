@@ -2,6 +2,7 @@
     text-decoration: none;
     color: #000000;
     transition: opacity .4s linear;
+    color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,6 +10,7 @@
     .menu__link {
         font-size: 18px;
         font-weight: 600;
+        color: #000000;
     }
 
     .menu__link:hover {

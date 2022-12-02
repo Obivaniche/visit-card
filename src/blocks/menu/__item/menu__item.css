@@ -1,4 +1,6 @@
 .menu__item {
+    margin: 10px 0 10px 0;
+    font-size: 18px;
     transition: transform .4s;
 }
 
