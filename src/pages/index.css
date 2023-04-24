@@ -20,6 +20,7 @@
 @import url(../blocks/tools/tools.css);
 @import url(../blocks/tools/__illustration/tools__illustration.css);
 @import url(../blocks/tools/__image/tools__image.css);
+@import url(../blocks/tools/__link/tools__link.css);
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/portfolio/portfolio.css);
 @import url(../blocks/portfolio/__title/portfolio__title.css);
@@ -45,3 +46,4 @@
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__item/menu__item.css);
 @import url(../blocks/menu/__link/menu__link.css);
+@import url(../blocks/tooltip/tooltip.css);

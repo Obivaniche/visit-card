@@ -17,11 +17,16 @@
                     </div>
                     <nav class="menu__container">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" data-goto=".content" href="#">На главную</a></li>
-                            <li class="menu__item"><a class="menu__link" data-goto=".about__article" href="#">Обо мне</a></li>
-                            <li class="menu__item"><a class="menu__link" data-goto=".skills__title" href="#">Мои навыки</a></li>
-                            <li class="menu__item"><a class="menu__link" data-goto=".portfolio__title" href="#">Портфолио</a></li>
-                            <li class="menu__item"><a class="menu__link" data-goto=".contacts__title" href="#">Контакты</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".content" href="#">На главную</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".about__article" href="#">Обо
+                                    мне</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".skills__title" href="#">Мои
+                                    навыки</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".portfolio__title"
+                                    href="#">Портфолио</a></li>
+                            <li class="menu__item"><a class="menu__link" data-goto=".contacts__title"
+                                    href="#">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -56,20 +61,40 @@
                 <h3 class="skills__subtitle">Главные инструменты</h3>
                 <div class="tools">
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('./images/html.svg')%>" alt="HTML">
-                        <figcaption class="tools__caption">HTML</figcaption>
+                        <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
+                            <a class="tools__link" rel="noopener" target="_blank"
+                                href="https://ru.wikipedia.org/wiki/HTML">
+                                <img class="tools__image" src="<%=require('./images/html.svg')%>" alt="HTML">
+                                <figcaption class="tools__caption">HTML</figcaption>
+                            </a>
+                        </span>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('./images/css.svg')%>" alt="CSS">
-                        <figcaption class="tools__caption">CSS</figcaption>
+                        <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
+                            <a class="tools__link" rel="noopener" target="_blank"
+                                href="https://ru.wikipedia.org/wiki/CSS">
+                                <img class="tools__image" src="<%=require('./images/css.svg')%>" alt="CSS">
+                                <figcaption class="tools__caption">CSS</figcaption>
+                            </a>
+                        </span>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image" src="<%=require('./images/js.svg')%>" alt="JavaScript">
-                        <figcaption class="tools__caption">JavaScript</figcaption>
+                        <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
+                            <a class="tools__link" rel="noopener" target="_blank"
+                                href="https://ru.wikipedia.org/wiki/JavaScript">
+                                <img class="tools__image" src="<%=require('./images/js.svg')%>" alt="JavaScript">
+                                <figcaption class="tools__caption">JavaScript</figcaption>
+                            </a>
+                        </span>
                     </figure>
                     <figure class="tools__illustration">
-                        <img class="tools__image rotation" src="<%=require('./images/react.svg')%>" alt="React">
-                        <figcaption class="tools__caption">React</figcaption>
+                        <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
+                            <a class="tools__link" rel="noopener" target="_blank"
+                                href="https://ru.wikipedia.org/wiki/React">
+                                <img class="tools__image rotation" src="<%=require('./images/react.svg')%>" alt="React">
+                                <figcaption class="tools__caption">React</figcaption>
+                            </a>
+                        </span>
                     </figure>
                 </div>
             </section>
@@ -103,16 +128,16 @@
                 <h3 class="contacts__subtitle">Добро пожаловать в мои соцсети!</h3>
                 <ul class="contacts__links">
                     <li class="contacts__item"><a class="contacts__link" href="https://www.linkedin.com/in/smirnov-v-v/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/linkedin.svg')%>"
-                                alt="LinkedIn"></a></li>
+                            target="_blank" rel="noopener"><img class="contacts__image"
+                                src="<%=require('./images/linkedin.svg')%>" alt="LinkedIn"></a></li>
                     <li class="contacts__item"><a class="contacts__link" href="https://twitter.com/Obivanishche/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/twitter.svg')%>"
-                                alt="Twitter"></a></li>
+                            target="_blank" rel="noopener"><img class="contacts__image"
+                                src="<%=require('./images/twitter.svg')%>" alt="Twitter"></a></li>
                     <li class="contacts__item"><a class="contacts__link" href="https://www.instagram.com/obivanishche"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/instagram.svg')%>"
-                                alt="Instagram"></a></li>
-                    <li class="contacts__item"><a class="contacts__link" href="https://vk.com/old_ben/"
-                            target="_blank" rel="noopener"><img class="contacts__image" src="<%=require('./images/vk.svg')%>"
+                            target="_blank" rel="noopener"><img class="contacts__image"
+                                src="<%=require('./images/instagram.svg')%>" alt="Instagram"></a></li>
+                    <li class="contacts__item"><a class="contacts__link" href="https://vk.com/old_ben/" target="_blank"
+                            rel="noopener"><img class="contacts__image" src="<%=require('./images/vk.svg')%>"
                                 alt="VK"></a>
                     </li>
                 </ul>
