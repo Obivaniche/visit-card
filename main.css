@@ -18,7 +18,7 @@
 .skills__title{color:#000;font-size:34px;margin:0 auto;padding:60px 0 0}
 .skills__subtitle{color:#000;font-size:18px;margin:24px auto 0}
 .tools{background-color:#fff;display:grid;grid-template-columns:repeat(1,1fr);justify-items:center;margin:40px auto 0;max-width:320px;row-gap:40px}@media screen and (min-width:768px){.tools{gap:40px;grid-template-columns:repeat(2,1fr);max-width:720px}}@media screen and (min-width:1024px){.tools{gap:0;grid-template-columns:repeat(4,1fr);max-width:928px}}@media screen and (min-width:1280px){.tools{max-width:1184px}}
-.tools__illustration{margin:0;padding:0;transition:all 1s ease-out;width:160px}@media screen and (min-width:768px){.tools__illustration:hover{transform:scale(1.3)}}
+.tools__illustration{margin:0;padding:0;transition:all .4s ease-out;width:160px}@media screen and (min-width:768px){.tools__illustration:hover{transform:scale(1.3)}}
 .tools__image{display:block;height:140px;margin:0 auto;width:140px}
 .tools__link{color:#000;text-decoration:none}
 @keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.rotation{animation:rotation 20s linear infinite}
