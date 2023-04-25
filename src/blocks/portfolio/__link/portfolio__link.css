@@ -1,9 +1,0 @@
-.portfolio__link {
-    text-decoration: underline;
-    color: #FFFFFF;
-    transition: opacity .4s linear;
-}
-
-.portfolio__link:hover {
-    opacity: .8;
-}
