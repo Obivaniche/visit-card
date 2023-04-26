@@ -27,7 +27,9 @@
 .portfolio__illustration{margin:60px 0 0;position:relative}.portfolio__illustration:last-of-type{padding:0 0 60px}
 .portfolio__image{display:block;height:144px;margin:0 auto;-o-object-fit:cover;object-fit:cover;width:288px}@media screen and (min-width:768px){.portfolio__image{height:324px;width:648px}}@media screen and (min-width:1024px){.portfolio__image{height:417px;width:835px}}@media screen and (min-width:1280px){.portfolio__image{height:532px;width:1065px}}
 .portfolio__cover{display:flex;height:144px;left:0;margin-left:auto;margin-right:auto;position:absolute;right:0;top:0;width:288px;z-index:1}.portfolio__cover:after{background:#2a2c2f;content:"";height:100%;opacity:0;transition:opacity .4s linear;width:100%;z-index:1}.portfolio__cover:hover:after,.portfolio__cover:hover:before{cursor:pointer;opacity:.8}@media screen and (min-width:768px){.portfolio__cover{height:324px;width:648px}}@media screen and (min-width:1024px){.portfolio__cover{height:417px;width:835px}}@media screen and (min-width:1280px){.portfolio__cover{height:532px;width:1065px}}
+.portfolio__cover_disabled{visibility:hidden}
 .portfolio__cover-link{align-items:center;color:#fff;cursor:pointer;display:flex;font-size:24px;height:100%;justify-content:center;opacity:0;position:absolute;text-decoration:none;transition:opacity .4s linear;width:100%;z-index:2}.portfolio__cover-link:hover{opacity:1}
+.portfolio__cover-link_disabled{opacity:0}
 .portfolio__caption{margin:10px auto 0}
 .portfolio__link{color:#fff;text-decoration:underline;transition:opacity .4s linear}.portfolio__link:hover{opacity:.8}
 .contacts{background-color:#fff;margin:0 auto;max-width:320px;padding:0;text-align:center}@media screen and (min-width:768px){.contacts{max-width:720px}}@media screen and (min-width:1024px){.contacts{max-width:928px}}@media screen and (min-width:1280px){.contacts{max-width:1184px}}
