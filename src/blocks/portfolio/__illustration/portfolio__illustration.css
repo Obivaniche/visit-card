@@ -1,5 +1,6 @@
 .portfolio__illustration {
     margin: 60px 0 0 0;
+    position: relative;
 }
 
 .portfolio__illustration:last-of-type {

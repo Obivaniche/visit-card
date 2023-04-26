@@ -3,6 +3,7 @@
 	.tooltip {
 		border-bottom: 1px dotted #0077AA;
 		cursor: help;
+		font-size: 12px;
 	}
 
 	.tooltip::after {
@@ -10,7 +11,7 @@
 		border-radius: 8px;
 		color: #FFF;
 		content: attr(data-tooltip);
-		margin-top: -200px;
+		margin-top: -180px;
 		opacity: 0;
 		padding: 3px 7px;
 		position: absolute;

@@ -10,7 +10,7 @@ const menuContainer = document.querySelector('.menu__container');
 const main = document.querySelector('.main');
 
 if (menuIcon) {
-    menuIcon.addEventListener('click', function (e) {
+    menuIcon.addEventListener('click', function () {
         menuIcon.classList.toggle('menu__icon_active');
         menuContainer.classList.toggle('menu__container_active');
         main.classList.toggle('main_lock');
@@ -19,7 +19,7 @@ if (menuIcon) {
 
 /* Скролл и закрытие меню */
 if (menuLinks.length > 0) {
-    menuLinks.forEach(menuLink => {
+    menuLinks.forEach(function (menuLink) {
         menuLink.addEventListener('click', onMenuLinkClick);
     });
 
@@ -44,3 +44,21 @@ if (menuLinks.length > 0) {
     }
 };
 
+/* Проверяем, с какого устройства просматривается сайт */
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+    /* Код для мобильных устройств */
+    /* Активация и деактивация ссылок портфолио */
+    const portfolio = document.querySelector('.portfolio');
+
+    const coverLink = portfolio.querySelectorAll('.portfolio__cover-link');
+
+    coverLink.forEach((elem) => {
+        elem.addEventListener('click', function(evt) {
+            evt.preventDefault();
+        });
+    });
+
+} else {
+    // код для обычных устройств
+}

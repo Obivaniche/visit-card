@@ -101,14 +101,22 @@
             <section class="portfolio">
                 <h2 class="portfolio__title">Портфолио</h2>
                 <figure class="portfolio__illustration">
-                    <img class="portfolio__image" src="<%=require('./images/learning.png')%>" alt="CSS">
-                    <figcaption class="portfolio__caption">
-                        <a class="portfolio__link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
-                            rel="noopener">Проект "Научиться учиться"</a>
-                    </figcaption>
+                        <img class="portfolio__image" src="<%=require('./images/learning.png')%>" alt="CSS">
+                        <div class="portfolio__cover">
+                            <a class="portfolio__cover-link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
+                            rel="noopener">Перейти &#9658;</a>
+                        </div>
+                        <figcaption class="portfolio__caption">
+                            <a class="portfolio__link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
+                                rel="noopener">Проект "Научиться учиться"</a>
+                        </figcaption>
                 </figure>
                 <figure class="portfolio__illustration">
                     <img class="portfolio__image" src="<%=require('./images/travel.png')%>" alt="CSS">
+                    <div class="portfolio__cover">
+                        <a class="portfolio__cover-link" href="https://obivaniche.github.io/russian-travel/" target="_blank"
+                        rel="noopener">Перейти &#9658;</a>
+                    </div>
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/russian-travel/" target="_blank"
                             rel="noopener">Проект "Путешествие по России"</a>
@@ -116,6 +124,10 @@
                 </figure>
                 <figure class="portfolio__illustration">
                     <img class="portfolio__image" src="<%=require('./images/mesto.png')%>" alt="CSS">
+                    <div class="portfolio__cover">
+                        <a class="portfolio__cover-link" href="https://obivaniche.github.io/mesto/" target="_blank"
+                        rel="noopener">Перейти &#9658;</a>
+                    </div>
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/mesto/" target="_blank"
                             rel="noopener">Проект "Место"</a>
