@@ -1,6 +1,8 @@
 .menu__link {
     text-decoration: none;
     color: #000000;
+    -webkit-transition: opacity .4s linear;
+    -o-transition: opacity .4s linear;
     transition: opacity .4s linear;
     color: #FFFFFF;
 }

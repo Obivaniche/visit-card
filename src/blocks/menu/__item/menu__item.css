@@ -1,13 +1,19 @@
 .menu__item {
     margin: 10px 0 10px 0;
     font-size: 18px;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
     transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
 }
 
 @media screen and (min-width: 768px) {
 
     .menu__item:hover {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
     }
 
 }

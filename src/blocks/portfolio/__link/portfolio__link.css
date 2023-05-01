@@ -1,6 +1,8 @@
 .portfolio__link {
     text-decoration: underline;
     color: #FFFFFF;
+    -webkit-transition: opacity .4s linear;
+    -o-transition: opacity .4s linear;
     transition: opacity .4s linear;
 }
 

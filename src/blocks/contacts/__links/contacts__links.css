@@ -2,7 +2,11 @@
     margin: 48px auto 0 auto;
     padding: 0;
     width: 285px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }

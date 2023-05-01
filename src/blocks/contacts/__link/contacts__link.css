@@ -1,6 +1,8 @@
 .contacts__link {
     width: 46px;
     height: 46px;
+    -webkit-transition: opacity .4s linear;
+    -o-transition: opacity .4s linear;
     transition: opacity .4s linear;
 }
 

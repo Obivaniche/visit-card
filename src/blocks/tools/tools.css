@@ -2,7 +2,9 @@
     max-width: 320px;
     margin: 40px auto 0 auto;
     background-color: #FFFFFF;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
     row-gap: 40px;
     justify-items: center;
@@ -12,6 +14,7 @@
 
     .tools {
         max-width: 720px;
+        -ms-grid-columns: 1fr 40px 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
@@ -22,6 +25,7 @@
 
     .tools {
         max-width: 928px;
+        -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
     }

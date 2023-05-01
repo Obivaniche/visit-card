@@ -1,9 +1,15 @@
 .header__container {
     min-width: 320px;
     margin: 0 auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 70px;
     border-bottom: 1px solid #5C5C5C;
 }
