@@ -44,6 +44,71 @@ if (menuLinks.length > 0) {
     }
 };
 
+/* Попап */
+const popup = document.querySelectorAll('.popup');
+const popupHtml = document.querySelector('.popup-html');
+const popupCss = document.querySelector('.popup-css');
+const popupJs = document.querySelector('.popup-js');
+const popupReact = document.querySelector('.popup-react');
+
+const toolsHtml = document.querySelector('.tools-html');
+function openPopupHtml() {
+    openPopup(popupHtml);
+};
+toolsHtml.addEventListener('click', openPopupHtml);
+
+const toolsCss = document.querySelector('.tools-css');
+function openPopupCss() {
+    openPopup(popupCss);
+};
+toolsCss.addEventListener('click', openPopupCss);
+
+const toolsJs = document.querySelector('.tools-js');
+function openPopupJs() {
+    openPopup(popupJs);
+};
+toolsJs.addEventListener('click', openPopupJs);
+
+const toolsReact = document.querySelector('.tools-react');
+function openPopupReact() {
+    openPopup(popupReact);
+};
+toolsReact.addEventListener('click', openPopupReact);
+
+function openPopup(popup) {
+    document.addEventListener('keydown', closePopupEsc);
+    popup.classList.add('popup_opened');
+    const main = document.querySelector('.main');
+    main.classList.add('main_lock');
+};
+
+function closePopupEsc(evt) {
+    if (evt.key === 'Escape') {
+        const popupOpened = document.querySelector('.popup_opened');
+        closePopup(popupOpened);
+        const main = document.querySelector('.main');
+        main.classList.remove('main_lock');
+    }
+};
+
+function closePopup(popup) {
+    document.removeEventListener('keydown', closePopupEsc);
+    popup.classList.remove('popup_opened');
+    const main = document.querySelector('.main');
+    main.classList.remove('main_lock');
+};
+
+popup.forEach((popup) =>
+    popup.addEventListener('mousedown', (evt) => {
+        if (
+            evt.target.classList.contains('popup') ||
+            evt.target.classList.contains('popup__close-button')
+        ) {
+            closePopup(popup);
+        }
+    })
+);
+
 /* Проверяем, с какого устройства просматривается сайт */
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
@@ -54,7 +119,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     const coverLink = portfolio.querySelectorAll('.portfolio__cover-link');
 
     coverLink.forEach((elem) => {
-        elem.addEventListener('click', function(evt) {
+        elem.addEventListener('click', function (evt) {
             evt.preventDefault();
         });
     });

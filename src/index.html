@@ -60,40 +60,28 @@
                 <h2 class="skills__title">Мои навыки</h2>
                 <h3 class="skills__subtitle">Главные инструменты</h3>
                 <div class="tools">
-                    <figure class="tools__illustration">
+                    <figure class="tools__illustration tools-html">
                         <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
-                            <a class="tools__link" rel="noopener" target="_blank"
-                                href="https://ru.wikipedia.org/wiki/HTML">
-                                <img class="tools__image" src="<%=require('./images/html.svg')%>" alt="HTML">
-                                <figcaption class="tools__caption">HTML</figcaption>
-                            </a>
+                            <img class="tools__image" src="<%=require('./images/html.svg')%>" alt="HTML">
+                            <figcaption class="tools__caption">HTML</figcaption>
                         </span>
                     </figure>
-                    <figure class="tools__illustration">
+                    <figure class="tools__illustration tools-css">
                         <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
-                            <a class="tools__link" rel="noopener" target="_blank"
-                                href="https://ru.wikipedia.org/wiki/CSS">
-                                <img class="tools__image" src="<%=require('./images/css.svg')%>" alt="CSS">
-                                <figcaption class="tools__caption">CSS</figcaption>
-                            </a>
+                            <img class="tools__image" src="<%=require('./images/css.svg')%>" alt="CSS">
+                            <figcaption class="tools__caption">CSS</figcaption>
                         </span>
                     </figure>
-                    <figure class="tools__illustration">
+                    <figure class="tools__illustration tools-js">
                         <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
-                            <a class="tools__link" rel="noopener" target="_blank"
-                                href="https://ru.wikipedia.org/wiki/JavaScript">
-                                <img class="tools__image" src="<%=require('./images/js.svg')%>" alt="JavaScript">
-                                <figcaption class="tools__caption">JavaScript</figcaption>
-                            </a>
+                            <img class="tools__image" src="<%=require('./images/js.svg')%>" alt="JavaScript">
+                            <figcaption class="tools__caption">JavaScript</figcaption>
                         </span>
                     </figure>
-                    <figure class="tools__illustration">
+                    <figure class="tools__illustration tools-react">
                         <span class="tooltip" data-tooltip="Хочешь знать больше? Жми!">
-                            <a class="tools__link" rel="noopener" target="_blank"
-                                href="https://ru.wikipedia.org/wiki/React">
-                                <img class="tools__image rotation" src="<%=require('./images/react.svg')%>" alt="React">
-                                <figcaption class="tools__caption">React</figcaption>
-                            </a>
+                            <img class="tools__image rotation" src="<%=require('./images/react.svg')%>" alt="React">
+                            <figcaption class="tools__caption">React</figcaption>
                         </span>
                     </figure>
                 </div>
@@ -101,21 +89,21 @@
             <section class="portfolio">
                 <h2 class="portfolio__title">Портфолио</h2>
                 <figure class="portfolio__illustration">
-                        <img class="portfolio__image" src="<%=require('./images/learning.png')%>" alt="CSS">
-                        <div class="portfolio__cover">
-                            <a class="portfolio__cover-link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
-                            rel="noopener">Перейти &#9658;</a>
-                        </div>
-                        <figcaption class="portfolio__caption">
-                            <a class="portfolio__link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
-                                rel="noopener">Проект "Научиться учиться"</a>
-                        </figcaption>
+                    <img class="portfolio__image" src="<%=require('./images/learning.png')%>" alt="CSS">
+                    <div class="portfolio__cover">
+                        <a class="portfolio__cover-link" href="https://obivaniche.github.io/how-to-learn/"
+                            target="_blank" rel="noopener">Перейти &#9658;</a>
+                    </div>
+                    <figcaption class="portfolio__caption">
+                        <a class="portfolio__link" href="https://obivaniche.github.io/how-to-learn/" target="_blank"
+                            rel="noopener">Проект "Научиться учиться"</a>
+                    </figcaption>
                 </figure>
                 <figure class="portfolio__illustration">
                     <img class="portfolio__image" src="<%=require('./images/travel.png')%>" alt="CSS">
                     <div class="portfolio__cover">
-                        <a class="portfolio__cover-link" href="https://obivaniche.github.io/russian-travel/" target="_blank"
-                        rel="noopener">Перейти &#9658;</a>
+                        <a class="portfolio__cover-link" href="https://obivaniche.github.io/russian-travel/"
+                            target="_blank" rel="noopener">Перейти &#9658;</a>
                     </div>
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/russian-travel/" target="_blank"
@@ -126,7 +114,7 @@
                     <img class="portfolio__image" src="<%=require('./images/mesto.png')%>" alt="CSS">
                     <div class="portfolio__cover">
                         <a class="portfolio__cover-link" href="https://obivaniche.github.io/mesto/" target="_blank"
-                        rel="noopener">Перейти &#9658;</a>
+                            rel="noopener">Перейти &#9658;</a>
                     </div>
                     <figcaption class="portfolio__caption">
                         <a class="portfolio__link" href="https://obivaniche.github.io/mesto/" target="_blank"
@@ -159,6 +147,57 @@
         <footer class="footer">
             <p class="footer__copyright">&copy; 2022. Владислав Смирнов</p>
         </footer>
+    </div>
+    <div class="popup popup-html">
+        <div class="popup__container">
+            <button class="popup__close-button close-html" type="button"></button>
+            <h2 class="popup__title">HTML</h2>
+            <p class="popup__description">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
+                стандартизированный язык
+                разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера
+                по протоколам HTTP / HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс,
+                который будет отображаться на экране монитора. Элементы HTML являются строительными блоками HTML
+                страниц.
+            </p>
+        </div>
+    </div>
+    <div class="popup popup-css">
+        <div class="popup__container">
+            <button class="popup__close-button close-css" type="button"></button>
+            <h2 class="popup__title">CSS</h2>
+            <p class="popup__description">CSS (Cascading Style Sheets) — язык таблиц стилей, который позволяет
+                прикреплять стиль (например, шрифты и цвет) к структурированным документам (например, документам HTML и
+                приложениям XML).
+                Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и пользовательских
+                интерфейсов, написанных на языках HTML и XHTML, но также могут быть применены к любому виду
+                XML-документа, в том числе XML, SVG и XUL.
+            </p>
+        </div>
+    </div>
+
+    <div class="popup popup-js">
+        <div class="popup__container">
+            <button class="popup__close-button close-js" type="button"></button>
+            <h2 class="popup__title">JavaScript</h2>
+            <p class="popup__description">JavaScript ("Js" для краткости) — это полноценный динамический язык
+                программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность
+                на веб-сайтах. Его разработал Brendan Eich, сооснователь проекта Mozilla, Mozilla Foundation и Mozilla
+                Corporation. JavaScript невероятно универсален и дружелюбен к новичкам.
+            </p>
+        </div>
+    </div>
+
+    <div class="popup popup-react">
+        <div class="popup__container">
+            <button class="popup__close-button close-react" type="button"></button>
+            <h2 class="popup__title">React</h2>
+            <p class="popup__description">React — это библиотека JavaScript с открытым кодом для создания внешних
+                пользовательских интерфейсов. В отличие от других библиотек JavaScript, предоставляющих полноценную
+                платформу приложений, React ориентируется исключительно на создание представлений приложений через
+                инкапсулированные единицы (называются компонентами), которые сохраняют состояние и генерируют элементы
+                пользовательского интерфейса.
+            </p>
+        </div>
     </div>
 </body>
 
