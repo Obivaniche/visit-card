@@ -1,7 +1,7 @@
 /* Стили */
 import './index.css';
 
-/* Сылки */
+/* Сылки навигации */
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 
 /* Открытие меню */
@@ -44,13 +44,16 @@ if (menuLinks.length > 0) {
     }
 };
 
-/* Попап */
+/* Попапы */
+
+/* Находим попапы */
 const popup = document.querySelectorAll('.popup');
 const popupHtml = document.querySelector('.popup-html');
 const popupCss = document.querySelector('.popup-css');
 const popupJs = document.querySelector('.popup-js');
 const popupReact = document.querySelector('.popup-react');
 
+/* Открываем попапы */
 const toolsHtml = document.querySelector('.tools-html');
 function openPopupHtml() {
     openPopup(popupHtml);
@@ -75,6 +78,7 @@ function openPopupReact() {
 };
 toolsReact.addEventListener('click', openPopupReact);
 
+/* Открываем попапы и блокируем прокрутку*/
 function openPopup(popup) {
     document.addEventListener('keydown', closePopupEsc);
     popup.classList.add('popup_opened');
@@ -82,6 +86,7 @@ function openPopup(popup) {
     main.classList.add('main_lock');
 };
 
+/* Закрываем попапы */
 function closePopupEsc(evt) {
     if (evt.key === 'Escape') {
         const popupOpened = document.querySelector('.popup_opened');
