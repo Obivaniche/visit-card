@@ -3,4 +3,5 @@
     margin: 20px auto 0 auto;
     font-size: 34px;
     color: #000000;
+    user-select: none;
 }

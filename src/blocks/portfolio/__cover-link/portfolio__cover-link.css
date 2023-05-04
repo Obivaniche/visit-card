@@ -3,11 +3,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -24,4 +24,31 @@
 
 .portfolio__cover-link:hover {
     opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .portfolio__cover-link {
+        font-size: 28px;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .portfolio__cover-link {
+        font-size: 32px;
+
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .portfolio__cover-link {
+        font-size: 36px;
+
+    }
+
 }

@@ -52,6 +52,10 @@ const popupHtml = document.querySelector('.popup-html');
 const popupCss = document.querySelector('.popup-css');
 const popupJs = document.querySelector('.popup-js');
 const popupReact = document.querySelector('.popup-react');
+const popupNode = document.querySelector('.popup-node');
+const popupGithub = document.querySelector('.popup-github');
+const popupApi = document.querySelector('.popup-api');
+const popupFigma = document.querySelector('.popup-figma');
 
 /* Открываем попапы */
 const toolsHtml = document.querySelector('.tools-html');
@@ -77,6 +81,30 @@ function openPopupReact() {
     openPopup(popupReact);
 };
 toolsReact.addEventListener('click', openPopupReact);
+
+const toolsNode = document.querySelector('.tools-node');
+function openPopupNode() {
+    openPopup(popupNode);
+};
+toolsNode.addEventListener('click', openPopupNode);
+
+const toolsGithub = document.querySelector('.tools-github');
+function openPopupGithub() {
+    openPopup(popupGithub);
+};
+toolsGithub.addEventListener('click', openPopupGithub);
+
+const toolsApi = document.querySelector('.tools-api');
+function openPopupApi() {
+    openPopup(popupApi);
+};
+toolsApi.addEventListener('click', openPopupApi);
+
+const toolsFigma = document.querySelector('.tools-figma');
+function openPopupFigma() {
+    openPopup(popupFigma);
+};
+toolsFigma.addEventListener('click', openPopupFigma);
 
 /* Открываем попапы и блокируем прокрутку*/
 function openPopup(popup) {
