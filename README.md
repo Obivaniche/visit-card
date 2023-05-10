@@ -6,6 +6,6 @@
 
 <br><strong>Основные технологии:</strong> <p>HTML, CSS, javaScript, Flexbox, Grid и семантическая верстка, кроссбраузерная верстка, трансформации, БЭМ, Git, Webpack.</p>
 
-<br><strong>Планирумые обновления:</strong> <p>Добавление адаптивности при помощи JavaScript для удобного просмотра сайта на любых устройствах.<p>
+<br><strong>Планируемые обновления:</strong> <p>Добавление адаптивности при помощи JavaScript для удобного просмотра сайта на любых устройствах.<p>
 
 <br><strong>Ссылка GHPages:</strong> https://obivaniche.github.io/visit-card/
