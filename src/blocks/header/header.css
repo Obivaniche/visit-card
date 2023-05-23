@@ -1,3 +1,8 @@
+@keyframes descent {
+    0% {-webkit-transform: translateY(-150%);transform: translateY(-150%);}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);}
+  }
+
 .header {
     position: fixed;
     top: 0;
@@ -5,4 +10,9 @@
     width: 100%;
     z-index: 2;
     background-color: #FFFFFF;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+    -webkit-animation: descent .8s forwards;
+            animation: descent .8s forwards;
 }

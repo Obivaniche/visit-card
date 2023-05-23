@@ -142,6 +142,26 @@ popup.forEach((popup) =>
     })
 );
 
+/* Анимация контактов при скролле */
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('contacts__item_animated');
+      } else {
+        change.target.classList.remove('contacts__item_animated');
+      }
+    });
+  };
+  
+  let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.contacts__item');
+  
+  for (let elm of elements) {
+    observer.observe(elm);
+  };
+
 /* Проверяем, с какого устройства просматривается сайт */
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
@@ -158,5 +178,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     });
 
 } else {
-    // код для обычных устройств
-}
+    /* код для обычных устройств */
+};
+

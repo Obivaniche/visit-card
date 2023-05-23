@@ -35,6 +35,7 @@
 @import url(../blocks/contacts/__subtitle/contacts__subtitle.css);
 @import url(../blocks/contacts/__links/contacts__links.css);
 @import url(../blocks/contacts/__item/contacts__item.css);
+@import url(../blocks/contacts/__item/_animated/contacts__item_animated.css);
 @import url(../blocks/contacts/__link/contacts__link.css);
 @import url(../blocks/contacts/__image/contacts__image.css);
 @import url(../blocks/contacts/__text/contacts__text.css);

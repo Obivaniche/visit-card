@@ -1,7 +1,24 @@
+@keyframes appearance-left {
+    0% {
+        -webkit-transform: translateX(-300%);
+        transform: translateX(-300%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
 .about__title_black {
     color: #000000;
     padding: 0;
     margin: 60px 0 0 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-animation: appearance-left .8s forwards;
+    animation: appearance-left .8s forwards;
 }
 
 @media screen and (min-width: 768px) {

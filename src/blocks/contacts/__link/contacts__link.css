@@ -4,6 +4,7 @@
     -webkit-transition: opacity .4s linear;
     -o-transition: opacity .4s linear;
     transition: opacity .4s linear;
+    
 }
 
 @media screen and (min-width: 768px) {
